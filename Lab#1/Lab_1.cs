@@ -802,7 +802,16 @@ namespace KPiYP_1
                         {
                             case "1":
                                 {
+                                    Console.WriteLine("18.1. Is a triangle with side lengths a, b, c isosceles?");
 
+                                    Console.Write("Enter value of A length: ");
+                                    double lengthA = double.Parse(Console.ReadLine());
+                                    Console.Write("Enter value of B length: ");
+                                    double lengthB = double.Parse(Console.ReadLine());
+                                    Console.Write("Enter value of C length: ");
+                                    double lengthC = double.Parse(Console.ReadLine());
+                                    Console.WriteLine("Rectangle is" + (lengthA == lengthB && lengthB != lengthC || lengthC == lengthA && lengthB != lengthA ||
+                                        lengthB == lengthC && lengthA != lengthB ? "" : "n't") + " isoscelses");
                                 }
                                 break;
                             case "2":
