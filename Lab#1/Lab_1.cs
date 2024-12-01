@@ -229,7 +229,18 @@ namespace KPiYP_1
                         {
                             case "1":
                                 {
+                                    Console.WriteLine("6.1. which of the digits of a two-digit number is greater: the first or the second");
 
+                                    Console.Write("Enter your number: ");
+                                    int number = int.Parse(Console.ReadLine());
+                                    if(number < 100 && number > 9)
+                                    {
+                                        Console.WriteLine("first number " + (number / 10 > number % 10 ? "more" : "less") + " than second number");
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("Not Valid Number!!!");
+                                    }
                                 }
                                 break;
                             case "2":
