@@ -277,7 +277,18 @@ namespace KPiYP_1
                         {
                             case "1":
                                 {
+                                    Console.WriteLine("7.1. whether the digits of a given two-digit number are the same");
 
+                                    Console.Write("Enter your Number: ");
+                                    int number = int.Parse(Console.ReadLine());
+                                    if (9 < number && number < 100)
+                                    {
+                                        Console.WriteLine(number / 10 == number % 10 ? "numbers are same" : "numbers aren't the same");
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("Not Valid Number!!!");
+                                    }
                                 }
                                 break;
                             case "2":
