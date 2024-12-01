@@ -615,7 +615,18 @@ namespace KPiYP_1
                         {
                             case "1":
                                 {
+                                    Console.WriteLine("14.1. which of the digits of a three-digit number is greater: the second or the last");
 
+                                    Console.Write("Enter your number: ");
+                                    int number = int.Parse(Console.ReadLine());
+                                    if (99 < number && number < 1000)
+                                    {
+                                        Console.WriteLine("second number " + ((number / 10) % 10 > number % 10 ? "more" : "less") + " than last number");
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("Number isn't valid!!!");
+                                    }
                                 }
                                 break;
                             case "2":
