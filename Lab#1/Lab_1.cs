@@ -469,7 +469,18 @@ namespace KPiYP_1
                         {
                             case "1":
                                 {
+                                    Console.WriteLine("11.1. Is the sum of the digits of a two-digit number a multiple of 5");
 
+                                    Console.Write("Enter your number: ");
+                                    int number = int.Parse(Console.ReadLine());
+                                    if (9 < number && number < 100)
+                                    {
+                                        Console.WriteLine(((number / 10) + (number % 10)) % 5 == 0 ? "sum multiply by 5" : "sum not multiply by 5");
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("Not valid number!!!");
+                                    }
                                 }
                                 break;
                             case "2":
