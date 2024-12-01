@@ -143,7 +143,11 @@ namespace KPiYP_1
                         {
                             case "1":
                                 {
+                                    Console.WriteLine("4.1. does this integer end in 7?");
 
+                                    Console.Write("Enter your number: ");
+                                    int number = int.Parse(Console.ReadLine());
+                                    Console.WriteLine("this integer " + (number % 10 == 7 ? "end on 7" : "don't end on 7"));
                                 }
                                 break;
                             case "2":
