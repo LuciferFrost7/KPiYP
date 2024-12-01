@@ -325,7 +325,18 @@ namespace KPiYP_1
                         {
                             case "1":
                                 {
+                                    Console.WriteLine("8.1. is the sum of the digits of a two-digit number even?");
 
+                                    Console.Write("Enter your Number: ");
+                                    int number = int.Parse(Console.ReadLine());
+                                    if (9 < number && number < 100)
+                                    {
+                                        Console.WriteLine("the sum are" + (((number / 10) + (number % 10)) % 2 == 0 ? " even" : "n't even"));
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("Not Valid Number!!!");
+                                    }
                                 }
                                 break;
                             case "2":
