@@ -373,7 +373,18 @@ namespace KPiYP_1
                         {
                             case "1":
                                 {
+                                    Console.WriteLine("9.1. is the sum of the digits of a two-digit number not even?");
 
+                                    Console.Write("Enter your Number: ");
+                                    int number = int.Parse(Console.ReadLine());
+                                    if (9 < number && number < 100)
+                                    {
+                                        Console.WriteLine("the sum are" + (((number / 10) + (number % 10)) % 2 == 1 ? " not even" : "n't not even"));
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("Not Valid Number!!!");
+                                    }
                                 }
                                 break;
                             case "2":
