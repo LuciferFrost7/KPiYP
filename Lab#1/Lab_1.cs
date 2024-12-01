@@ -421,7 +421,18 @@ namespace KPiYP_1
                         {
                             case "1":
                                 {
+                                    Console.WriteLine("10.1. Is the sum of the digits of a two-digit number a multiple of three?");
 
+                                    Console.Write("Enter your number: ");
+                                    int number = int.Parse(Console.ReadLine());
+                                    if (9 < number && number < 100) 
+                                    {
+                                        Console.WriteLine(((number / 10) + (number % 10)) % 3 == 0 ? "sum multiply by 3" : "sum not multiply by 3");
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("Not valid number!!!");
+                                    }
                                 }
                                 break;
                             case "2":
