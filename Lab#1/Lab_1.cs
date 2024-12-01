@@ -848,7 +848,15 @@ namespace KPiYP_1
                         {
                             case "1":
                                 {
+                                    Console.WriteLine("19.1. Is a triangle with side lengths a, b, c equilateral?");
 
+                                    Console.Write("Enter value of A length: ");
+                                    double lengthA = double.Parse(Console.ReadLine());
+                                    Console.Write("Enter value of B length: ");
+                                    double lengthB = double.Parse(Console.ReadLine());
+                                    Console.Write("Enter value of C length: ");
+                                    double lengthC = double.Parse(Console.ReadLine());
+                                    Console.WriteLine("Rectangle is" + (lengthA == lengthB && lengthB == lengthC  ? "" : "n't") + " equilateral");
                                 }
                                 break;
                             case "2":
