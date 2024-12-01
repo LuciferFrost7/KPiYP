@@ -99,7 +99,14 @@ namespace KPiYP_1
                         {
                             case "1":
                                 {
+                                    Console.WriteLine("if an integer M is divisible by an integer N, then the quotient of the division is displayed on the screen, otherwise the message “M is not divisible by N” is displayed");
 
+                                    Console.Write("Enter number M: ");
+                                    int numberM = int.Parse(Console.ReadLine());
+                                    Console.Write("Enter number N: ");
+                                    int numberN = int.Parse(Console.ReadLine());
+
+                                    Console.WriteLine(numberM % numberN == 0 ? numberM / numberN : "M isn't divisible by N");
                                 }
                                 break;
                             case "2":
