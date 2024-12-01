@@ -663,7 +663,18 @@ namespace KPiYP_1
                         {
                             case "1":
                                 {
+                                    Console.WriteLine("15.1. Are all the digits of a three-digit number the same?");
 
+                                    Console.Write("Enter your number: ");
+                                    int number = int.Parse(Console.ReadLine());
+                                    if (99 < number && number < 1000)
+                                    {
+                                        Console.WriteLine("all numbers are" + (number / 100 == number % 10 && (number / 10) % 10 == number % 10? " the same" : "n't the same"));
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("Number isn't valid!!!");
+                                    }
                                 }
                                 break;
                             case "2":
