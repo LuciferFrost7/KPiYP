@@ -58,7 +58,11 @@ namespace KPiYP_1
                         {
                             case "1":
                                 {
+                                    Console.WriteLine("1.1. Whether the given integer isn't even");
 
+                                    Console.Write("Enter your number: ");
+                                    int number = int.Parse(Console.ReadLine());
+                                    Console.WriteLine($"Number {number} is" + (number % 2 == 1 ? " not even" : "n't not even" ));
                                 }
                                 break;
                             case "2":
