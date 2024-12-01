@@ -711,7 +711,15 @@ namespace KPiYP_1
                         {
                             case "1":
                                 {
+                                    Console.WriteLine("16.1. Is there a triangle with side lengths a, b, c?");
 
+                                    Console.Write("Enter value of A length: ");
+                                    double lengthA = double.Parse(Console.ReadLine());
+                                    Console.Write("Enter value of B length: ");
+                                    double lengthB = double.Parse(Console.ReadLine());
+                                    Console.Write("Enter value of C length: ");
+                                    double lengthC = double.Parse(Console.ReadLine());
+                                    Console.WriteLine(lengthA + lengthB > lengthC && lengthB + lengthC > lengthA && lengthC + lengthA > lengthB? "Yes, triangle can be" : "No, triangle can't be");
                                 }
                                 break;
                             case "2":
