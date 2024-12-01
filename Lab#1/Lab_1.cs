@@ -184,7 +184,15 @@ namespace KPiYP_1
                         {
                             case "1":
                                 {
+                                    Console.WriteLine("5.1 does the equation ax2+bx+c=0 have a solution, where a, b, c are these real numbers;");
 
+                                    Console.Write("Enter your A number: ");
+                                    double numberA = double.Parse(Console.ReadLine());
+                                    Console.Write("Enter your B number: ");
+                                    double numberB = double.Parse(Console.ReadLine());
+                                    Console.Write("Enter your C number: ");
+                                    double numberC = double.Parse(Console.ReadLine());
+                                    Console.WriteLine(Math.Pow(numberB, 2) - 4 * numberA * numberC >= 0 ? "yes" : "no");
                                 }
                                 break;
                             case "2":
