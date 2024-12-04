@@ -893,7 +893,18 @@ namespace KPiYP_1
                         {
                             case "1":
                                 {
+                                    Console.WriteLine("20.1. Is a three-digit number divisible by 7?");
 
+                                    Console.Write("Enter your number: ");
+                                    int number = int.Parse(Console.ReadLine());
+                                    if(99 < number && number < 1000)
+                                    {
+                                        Console.WriteLine("Number is" + (number % 7 == 0 ? "" : "n't") + " divisible by 7");
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("Not valid Number!!!");
+                                    }
                                 }
                                 break;
                             case "2":
