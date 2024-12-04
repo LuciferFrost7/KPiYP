@@ -26,7 +26,12 @@ namespace KPiYP_1
                                 break;
                             case "2":
                                 {
-
+                                    const int r = 9;
+                                    Console.Write("Enter x: ");
+                                    double x = double.Parse(Console.ReadLine());
+                                    Console.WriteLine("Enter y: ");
+                                    double y = double.Parse(Console.ReadLine());
+                                    Console.WriteLine(x >= 0 && (x*x) * (y*y) <= r*r  ? "dot in zone" : "dot not in zone");
                                 }
                                 break;
                             case "3":
